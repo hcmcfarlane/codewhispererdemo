@@ -1,7 +1,12 @@
+# AWS CodeWhisperer Immersion Workshop
+
+Thursday 28th Sept, online workshop with Amazon to get hands-on experience with CW, learn best practices, better understanding of prompt engineering, and how to get the most out of the tool.
+
+Original README follows...
+
 # CodeWhisperer Workshop
 
 This repository is in active development. It will eventually grow into an immersion day replacing the current workshop. 
-
 
 ## Overview
 
@@ -18,7 +23,6 @@ We will develop the following modules. Each module is independent and can be com
 1. Accelerating big data with EMR and Amazon CodeWhisperer (300 Level)
 
 We hope to launch the Python module by the ned of May and remaining modules by the end of June.
-
 
 ## Workshop Tenets
 
