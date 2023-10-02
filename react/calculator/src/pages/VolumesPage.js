@@ -63,6 +63,25 @@ export function calculateConeVolume(dimensions) {
   return (1/3) * Math.PI * dimensions.radius * dimensions.radius * dimensions.height;
 }
 
+/**
+ * Calculate the volume of a cylinder
+ * The function takes an object dimensions with property radius and height and calculates the volume of the cylinder. It uses the formula:
+ *
+ * volume = pi * radius^2 * height
+ *
+ * @param {object} dimensions with properties radius and height
+ * @throws {Error} if the object does not contain a property radius and/or height
+ * @example calculateCylinderVolume({radius: 10, height: 10}
+ */
+
+export function calculateCylinderVolume(dimensions) {
+  if (!dimensions.radius || !dimensions.height) {
+    throw new Error("The object does not contain a property radius or height");
+  }
+  //prettier-ignore
+  return Math.PI * dimensions.radius * dimensions.radius * dimensions.height;
+}
+
 // define list of shapes and their corresponding parameters to calculate volumes
 const shapes = {
   Cube: {
@@ -85,6 +104,13 @@ const shapes = {
     formulaText: "(1/3) * pi * radius^2 * height",
     image: "cone.svg",
     function: calculateConeVolume,
+  },
+  Cylinder: {
+    name: "Cylinder",
+    dimensions: ["radius", "height"],
+    formulaText: "pi * radius^2 * height",
+    image: "cylinder.svg",
+    function: calculateCylinderVolume,
   },
 };
 
